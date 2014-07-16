@@ -127,6 +127,9 @@
             <!-- Breadcrumbs line -->
             <div class="crumbs">
                 <ul id="breadcrumbs" class="breadcrumb">
+                    <li>{% block page_title %}<i class="fa fa-home"></i> Welcome
+                        {{ request.user.name }}{% endblock page_title %}</li>
+
                 </ul>
 
                 <ul class="crumb-buttons">
@@ -137,25 +140,12 @@
             <!--=== Page Header ===-->
             <div class="page-header">
                 <div class="page-title">
-                    <h3>{% block page_title %}<i class="fa fa-home"></i> Welcome
-                        {{ request.user.name }}{% endblock page_title %}</h3>
                 </div>
             </div>
             <!-- /Page Header -->
 
             <!--=== Page Content ===-->
             <div class="row">
-                <!--=== Example Box ===-->
-                <!--div class="col-md-12">
-                    <div class="widget box">
-                        <div class="widget-header">
-                            <h4><i class="fa fa-reorder"></i> Example Box</h4>
-                        </div>
-                        <div class="widget-content">
-                            <p>Lorem Ipsum.</p>
-                        </div>
-                    </div>
-                </div-->
                 <div class="col-md-12">
                     {% block content %}
                         <p>This will be the dashboard</p>

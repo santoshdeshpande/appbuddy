@@ -102,8 +102,8 @@ class CategoryListView(BaseFilterView):
     model = Category
     filterset_class = CategoryFilter
     header_names = ['Name']
-    title_singular = 'Categories'
-    title = 'Category'
+    title_singular = 'Category'
+    title = 'Categories'
     type_name = 'categories'
 
 
